@@ -3,21 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TimeBridge Support</title>
+  <title>TimeBridge - Support</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; line-height: 1.6; }
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --link: #2563eb;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.25rem; margin-top: 30px; }
+
+    p { margin: 0 0 14px; color: var(--muted); }
+    strong { color: var(--text); }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 24px 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-item { margin-bottom: 20px; }
+
+    .footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
-  <h1>Support</h1>
-  <p>If you need help with TimeBridge, contact us at:</p>
-  <p><a href="mailto:your-support-email@example.com">your-support-email@example.com</a></p>
+  <main>
+    <h1>TimeBridge Support</h1>
+    <p>
+      Welcome to TimeBridge support. We are here to help with questions, bug reports, and feature requests.
+    </p>
 
-  <h2>Common Questions</h2>
-  <p><strong>Q:</strong> How do I convert time zones?<br />
-     <strong>A:</strong> Open the app, select your source and target zones, then view the converted time.</p>
+    <hr />
 
-  <p><strong>Q:</strong> The app is not behaving as expected.<br />
-     <strong>A:</strong> Please email us with your device model, iOS version, and steps to reproduce the issue.</p>
+    <h2>Contact Us</h2>
+    <p><strong>Developer:</strong> Wilde Productions</p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:infinitepixel42@gmail.com">infinitepixel42@gmail.com</a>
+    </p>
+    <p>
+      We aim to respond to all inquiries within 48 hours.
+    </p>
+
+    <hr />
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p><strong>What is TimeBridge?</strong></p>
+      <p>
+        TimeBridge is an app that helps you convert time zones and schedule events across different regions quickly and clearly.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>Does TimeBridge collect my personal data?</strong></p>
+      <p>
+        TimeBridge is designed with privacy in mind. If you contact support, we only use your email to reply to your request.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>I found a bug. What should I include in my email?</strong></p>
+      <p>
+        Please include your iPhone model, iOS version, app version, and steps to reproduce the issue.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p><strong>Can I request new features?</strong></p>
+      <p>
+        Yes. Feature requests are welcome by email and help guide future updates.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>Privacy & Security</h2>
+    <p>
+      TimeBridge is built to minimize data collection and keep your usage private.
+      For full details, please read the Privacy Policy.
+    </p>
+
+    <div class="footer">
+      <p>
+        <a href="./privacy.html">Privacy Policy</a>
+      </p>
+      <p>© 2026 Wilde Productions. All rights reserved.</p>
+    </div>
+  </main>
 </body>
 </html>
