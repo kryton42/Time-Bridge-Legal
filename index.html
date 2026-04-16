@@ -4,137 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TimeBridge Legal</title>
-  <style>
-    :root {
-      --bg-1: #eef4ff;
-      --bg-2: #f9fbff;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --border: #dbe4f0;
-      --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --secondary: #f8fafc;
-      --secondary-hover: #eef2f7;
-      --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 20% 20%, #dbeafe 0%, transparent 40%),
-        linear-gradient(160deg, var(--bg-1), var(--bg-2));
-    }
-
-    .card {
-      width: 100%;
-      max-width: 760px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      padding: 40px 28px;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--primary);
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 999px;
-      padding: 6px 10px;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
-      line-height: 1.2;
-    }
-
-    p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.65;
-      font-size: 1.03rem;
-    }
-
-    .actions {
-      margin-top: 28px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .button {
-      text-decoration: none;
-      border-radius: 10px;
-      padding: 12px 18px;
-      font-weight: 600;
-      font-size: 0.96rem;
-      border: 1px solid transparent;
-      transition: 0.2s ease;
-    }
-
-    .button.primary {
-      color: #fff;
-      background: var(--primary);
-    }
-
-    .button.primary:hover {
-      background: var(--primary-hover);
-      transform: translateY(-1px);
-    }
-
-    .button.secondary {
-      color: var(--text);
-      background: var(--secondary);
-      border-color: var(--border);
-    }
-
-    .button.secondary:hover {
-      background: var(--secondary-hover);
-      transform: translateY(-1px);
-    }
-
-    .footer {
-      margin-top: 24px;
-      padding-top: 16px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main class="card">
-    <span class="badge">Official Legal Pages</span>
-    <h1>TimeBridge</h1>
-    <p>
-      Welcome to the official TimeBridge legal hub.
-      Use the links below for our Privacy Policy and Support information.
-    </p>
+  <main class="wrap">
+    <div class="brand">
+      <img src="./assets/timebridge-icon.png" alt="TimeBridge icon" />
+      <div>
+        <div style="font-weight:700;">TimeBridge</div>
+        <div style="color:#64748b;font-size:0.92rem;">Official Legal Pages</div>
+      </div>
+    </div>
+
+    <span class="badge">Legal Hub</span>
+    <h1>Welcome to TimeBridge</h1>
+    <p>Find support information and our privacy policy below.</p>
 
     <div class="actions">
-      <a class="button primary" href="./privacy.html">View Privacy Policy</a>
-      <a class="button secondary" href="./support.html">Get Support</a>
+      <a class="button primary" href="./privacy.html">Privacy Policy</a>
+      <a class="button" href="./support.html">Support</a>
     </div>
 
-    <div class="footer">
-      © 2026 Wilde Productions. All rights reserved.
-    </div>
+    <div class="footer">© 2026 Wilde Productions. All rights reserved.</div>
   </main>
 </body>
 </html>
