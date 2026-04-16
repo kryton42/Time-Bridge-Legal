@@ -9,7 +9,13 @@
 <body>
   <main class="wrap">
     <div class="brand">
-      <img src="./assets/timebridge-icon.png" alt="TimeBridge icon" />
+     <img
+  class="brand-icon"
+  src="./assets/timebridge-icon.png"
+  alt="TimeBridge icon"
+  onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+/>
+<div class="brand-icon-fallback" aria-hidden="true">TB</div>
       <div>
         <div style="font-weight:700;">TimeBridge</div>
         <div style="color:#64748b;font-size:0.92rem;">Official Legal Pages</div>
